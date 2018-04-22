@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.nishan.fleet.Fragment.CartFragment">
+
+    <TextView
+        android:id="@+id/tv_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/emopty_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:text="@string/app_name"
+        android:fontFamily="monospace"
+        android:textColor="#ffffff"
+        android:textSize="38sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/emopty_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:paddingBottom="20dp"
+        android:src="@drawable/shop_now_cat_svg" />
+
+    <TextView
+        android:id="@+id/tv_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emopty_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="20dp"
+        android:layout_marginBottom="15dp"
+        android:text="Scan barcodes and add products to cart"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/btn_start_shopping"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_marginTop="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        fancy:fb_textColor="#ffffff"
+        fancy:fb_textSize="22sp"
+        fancy:fb_defaultColor="@color/colorAccent"
+        fancy:fb_radius="70dp"
+        android:elevation="2dp"
+        fancy:fb_text="START SHOPPING"
+        fancy:fb_focusColor="@color/colorAccent"
+        />
+
+</RelativeLayout>

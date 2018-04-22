@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <Button
+                android:clickable="true"
+                android:layout_weight="1"
+                android:id="@+id/btn_frag_dec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="-"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_weight="1"
+                android:visibility="visible"
+                android:id="@+id/tv_frag_qty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textSize="22sp"
+                android:text="2" />
+
+            <Button
+                android:layout_weight="1"
+                android:visibility="visible"
+                android:clickable="true"
+                android:id="@+id/btn_frag_inc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="+"
+                android:textSize="22sp" />
+
+            <Button
+                android:focusableInTouchMode="false"
+                android:id="@+id/btn_frag_remove"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="32dp"
+                android:background="@drawable/ic_delete_black_24dp"
+                android:padding="8dp"
+                />
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>
