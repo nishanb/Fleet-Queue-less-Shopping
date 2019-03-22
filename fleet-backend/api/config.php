@@ -2,7 +2,7 @@
 
 $dbhost = 'localhost';
 $dbuser = 'id5062867_nishan';
-$dbpass = 'fleet123';
+$dbpass = 'pass';
 
 //connect to database
 $connection = mysqli_connect($dbhost, $dbuser, $dbpass);
